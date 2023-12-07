@@ -9,7 +9,7 @@ import pandas as pd
 st.title("Salse Analysis of Pizzas")
 
 # read csv file
-data = pd.read_csv(r"G:\我的云端硬盘\Learning\DATA 200\Assignments\Assignmtnt3\pizza_sales.csv")
+data = pd.read_csv(r"pizza_sales.csv")
 df = pd.DataFrame(data)
 df['date'] = pd.to_datetime(df['date']) 
 df = df.sort_values('date')
